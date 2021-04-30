@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body> 
+     <table border="1">
+     <thead>
+     <tr>
+        <th>번호</th>
+        <th>번호</th>
+     </tr>
+     <tbody>
+     <tr th:each="reply : ${list}">
+         <td><a href="#" th:text="${reply.seq}">번호</a></td>
+         <td th:text="${reply.title}">제목</td>
+     </tr>
+     </tbody>
+     </table>
+</body>
+</html>
